@@ -1,0 +1,149 @@
+$gray: #777777;
+$light-gray: #dcdcdc;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 960px;
+    margin: 0 auto;
+    padding: 25px 10px;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: ArialMT, sans-serif;
+}
+
+.gray-block{
+    background-color: $gray;
+    color: white;
+}
+
+.light-gray-block{
+    background-color: $light-gray;
+    color: $gray;
+}
+
+a{
+    color: inherit;
+}
+
+.unformatted-list{
+    list-style: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+
+    .header-1{
+        width: 122px;
+        height: 108px;
+    }
+
+    .header-2{
+        width: 279px;
+        height: 108px;
+    }
+
+    .header-3{
+        width: 513px;
+        height: 108px;
+        padding: 25px;
+        text-align: right;
+    }
+}
+
+hr{
+    height: 1px;
+    background-color: $gray;
+    border-width: .5px;
+    margin: 23px 0;
+}
+
+dfn{
+    font-style: normal;
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        width: 184px;
+        justify-content: space-between;
+
+        .aside-1{
+            padding: 15px;
+        }
+    }
+
+    .content{
+        width: 747px;
+
+        .content-1{
+            padding: 15px;
+            
+            ul{
+                margin: 30px 0 30px 36px;
+            }
+        }
+
+        .light-gray-images{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 133px);
+            grid-gap: 20px;
+        }
+
+        .info{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+
+            .light-gray-block{
+                width: 49%;
+                height: 200px;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+
+    > div {
+        width: 32%;
+    }
+
+    .footer-1{
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-2{
+        padding: 15px;
+        
+        ul{
+            list-style: square inside;
+        }
+    }
+
+    .footer-3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .gray-block{
+            height: 75px;
+        }
+    }
+}
